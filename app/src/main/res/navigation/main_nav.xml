@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav"
-    app:startDestination="@id/recipeListFragment">
+    app:startDestination="@id/testFragment">
 
     <fragment
         android:id="@+id/recipeListFragment"
@@ -16,4 +16,12 @@
         android:id="@+id/recipeFragment"
         android:name="com.digimoplus.myeducationcompose.presentation.ui.recipe.RecipeFragment"
         android:label="RecipeFragment" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.digimoplus.myeducationcompose.uz.TestFragment"
+        android:label="TestFragment" >
+        <action
+            android:id="@+id/action_testFragment_to_recipeListFragment"
+            app:destination="@id/recipeListFragment" />
+    </fragment>
 </navigation>
