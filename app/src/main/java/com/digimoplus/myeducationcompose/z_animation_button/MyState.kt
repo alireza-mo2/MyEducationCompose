@@ -1,6 +1,5 @@
-package com.digimoplus.myeducationcompose.uz
+package com.digimoplus.myeducationcompose.z_animation_button
 
-import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 
 class  MyState<T> : State<T> {

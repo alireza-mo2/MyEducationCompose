@@ -1,4 +1,4 @@
-package com.digimoplus.myeducationcompose.uz
+package com.digimoplus.myeducationcompose.z_animation_button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -9,7 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.ui.tooling.preview.Preview
-import com.digimoplus.myeducationcompose.uz.ui.FavenimateTheme
+import com.digimoplus.myeducationcompose.z_animation_button.ui.FavenimateTheme
 
 @Preview
 @Composable

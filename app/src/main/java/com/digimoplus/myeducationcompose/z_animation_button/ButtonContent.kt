@@ -1,4 +1,4 @@
-package com.digimoplus.myeducationcompose.uz
+package com.digimoplus.myeducationcompose.z_animation_button
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
@@ -8,14 +8,11 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.digimoplus.myeducationcompose.uz.ui.purple500
-import kotlinx.coroutines.launch
 
 @Composable
 fun ButtonContent(

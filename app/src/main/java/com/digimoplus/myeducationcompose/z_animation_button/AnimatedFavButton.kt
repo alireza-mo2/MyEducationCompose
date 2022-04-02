@@ -1,7 +1,6 @@
-package com.digimoplus.myeducationcompose.uz
+package com.digimoplus.myeducationcompose.z_animation_button
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.*
 import androidx.ui.tooling.preview.Preview
 
 @Preview

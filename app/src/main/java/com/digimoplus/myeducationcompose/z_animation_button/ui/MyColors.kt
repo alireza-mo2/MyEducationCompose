@@ -1,4 +1,4 @@
-package com.digimoplus.myeducationcompose.uz.ui
+package com.digimoplus.myeducationcompose.z_animation_button.ui
 
 
 import androidx.compose.ui.graphics.Color

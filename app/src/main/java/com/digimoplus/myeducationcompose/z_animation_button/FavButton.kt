@@ -1,6 +1,5 @@
-package com.digimoplus.myeducationcompose.uz
+package com.digimoplus.myeducationcompose.z_animation_button
 
-import androidx.compose.animation.animateColor
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.BorderStroke
@@ -8,14 +7,11 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.Colors
-import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.digimoplus.myeducationcompose.uz.ui.purple500
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

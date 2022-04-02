@@ -18,7 +18,7 @@
         android:label="RecipeFragment" />
     <fragment
         android:id="@+id/testFragment"
-        android:name="com.digimoplus.myeducationcompose.uz.TestFragment"
+        android:name="com.digimoplus.myeducationcompose.z_animation_button.TestFragment"
         android:label="TestFragment" >
         <action
             android:id="@+id/action_testFragment_to_recipeListFragment"
