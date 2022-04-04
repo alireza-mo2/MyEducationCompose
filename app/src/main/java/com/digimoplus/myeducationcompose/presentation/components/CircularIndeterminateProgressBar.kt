@@ -24,7 +24,7 @@ fun CircularIndeterminateProgressBar(
             horizontalArrangement = Arrangement.Center
         ) {
             CircularProgressIndicator(
-                color = Color.Blue
+                color = MaterialTheme.colors.primary
             )
         }
     }
