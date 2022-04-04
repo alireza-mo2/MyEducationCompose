@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav"
-    app:startDestination="@id/recipeListFragment">
+    app:startDestination="@id/themeFragment">
 
     <fragment
         android:id="@+id/recipeListFragment"
@@ -28,4 +28,8 @@
         android:id="@+id/profileFragment"
         android:name="com.digimoplus.myeducationcompose.z_animate_profile.ProfileFragment"
         android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.digimoplus.myeducationcompose.z_animation_theme.ThemeFragment"
+        android:label="ThemeFragment" />
 </navigation>
