@@ -31,6 +31,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun SearchAppBar(
+    modifier: Modifier = Modifier,
     query: String,
     onQueryChanged: (String) -> Unit,
     newSearch: () -> Unit,
@@ -42,7 +43,7 @@ fun SearchAppBar(
     onToggleTheme: () -> Unit
 ) {
     Surface(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier,
         color = MaterialTheme.colors.secondary,
         elevation = 8.dp,
     ) {

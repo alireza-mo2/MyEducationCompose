@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.digimoplus.myeducationcompose.domain.model.Recipe
 import com.digimoplus.myeducationcompose.network.RecipeService
 import com.digimoplus.myeducationcompose.repository.RecipeRepository
+import com.digimoplus.myeducationcompose.util.TAG
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -28,6 +29,8 @@ class RecipeListViewModel
     val loading = mutableStateOf(false)
     var categoryScrollIndex: Int = 0
     var categoryScrollOffset: Int = 0
+    val page = mutableStateOf(1)
+    private var recipeListScrollPosition = 0
 
     init {
         newSearch()
@@ -48,8 +51,43 @@ class RecipeListViewModel
         }
     }
 
+    fun onNextPage() {
+        viewModelScope.launch {
+            if ((recipeListScrollPosition + 1) >= page.value * PAGE_SIZE) {
+                loading.value = true
+                Log.d(TAG, "onNextPage: ${page.value}")
+                incrementPage()
+                delay(1000)
+                val result = recipeRepository.search(
+                    token = token,
+                    page.value,
+                    query.value
+                )
+                appendNewList(result)
+                loading.value = false
+            }
+        }
+    }
+
+    private fun incrementPage() {
+        page.value = page.value + 1
+    }
+
+    fun onChangeRecipesScrollPosition(position: Int) {
+        recipeListScrollPosition = position
+    }
+
+    // Append new list to current list of recipes
+    private fun appendNewList(recipes: List<Recipe>) {
+        val current = this.recipes.value?.toMutableList() ?: mutableListOf()
+        current.addAll(recipes)
+        this.recipes.value = current
+    }
+
     private fun resetSearchState() {
         recipes.value = listOf()
+        page.value = 1
+        onChangeRecipesScrollPosition(0)
         if (selectedCategory.value?.value != query.value) {
             clearSelectedCategory()
         }
