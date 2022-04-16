@@ -118,22 +118,22 @@ fun CircleProgress() {
             val startInDisplay = size.height * 0.156f
 
             drawCircle(
-                color = Color.Red,
+                color = Color.Black,
                 radius = pointsRadius - (pointsSizeDistance * 0),
                 center = Offset(size.width * 0.5f, startInDisplay + (pointsDistance * 0))
             )
             drawCircle(
-                color = Color.Red,
+                color = Color.Black,
                 radius = pointsRadius - (pointsSizeDistance * 1),
                 center = Offset(size.width * 0.5f, startInDisplay + (pointsDistance * 1))
             )
             drawCircle(
-                color = Color.Red,
+                color = Color.Black,
                 pointsRadius - (pointsSizeDistance * 2),
                 center = Offset(size.width * 0.5f, startInDisplay + (pointsDistance * 2))
             )
             drawCircle(
-                color = Color.Red,
+                color = Color.Black,
                 pointsRadius - (pointsSizeDistance * 3),
                 center = Offset(size.width * 0.5f, startInDisplay + (pointsDistance * 3))
             )
